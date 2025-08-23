@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(70deg, #000000, #2c2b2c );
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+/* Main CSS Start Here */
+
+/* Header */
+
+.logo a{
+    color: #fc0254 ;
+}
+
+.header-btn .bg-danger {
+    background-color: #fc0254 !important;
+}
+
+
+.header-btn .bg-gradient {
+    background: linear-gradient(70deg, #8f0432, #fc0254) !important
+}
+
+.header-btn:hover .bg-gradient {
+    background: linear-gradient(360deg, #8f0432, #fc0254) !important
+}
+
+.header-btn {
+    box-shadow: #fc025466 6px 7px 14px 2px !important;
+}
+
+nav ul li:hover a{
+    transition: all 200ms ease-in-out;
+    color: #fc0254 !important;   
+}
