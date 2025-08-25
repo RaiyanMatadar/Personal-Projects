@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="/CSS/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
     <!-- Icons -->
     <link rel="stylesheet" href="Remix icons/remixicon.css" type="text/css">
     <!-- CSS -->
@@ -21,10 +21,9 @@
                 <a href="javascript:void(0)" class="fw-bold me-auto">RAIYAN</a>
             </div>
 
-
             <div class="header-btn rounded-1 ms-auto me-3 order-md-last">
-                <a href="javascript:void(0)"
-                    class="btn ms-auto rounded-1 border-0 bg-danger bg-gradient text-white fw-medium">HIRE ME</a>
+                <a href="javascript:void(0)" class="btn ms-auto rounded-1 text-content  border-0 text-white fw-medium"
+                    data-bs-target="#contact-modal" data-bs-toggle="modal">HIRE ME</a>
             </div>
 
             <a href="javascript:void(0)" class="navbar-toggler border-0" data-bs-toggle="collapse"
@@ -42,9 +41,128 @@
                 </ul>
             </nav>
 
-
+            <!-- Form section using modal -->
+            <form>
+                <div class="modal fade" id="contact-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>CONTACT US</h3>
+                                <a href="javascript:void(0)" class="btn-close bg-white" data-bs-dismiss="modal"></a>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="form-control mb-4" placeholder="First Name">
+                                <input type="text" class="form-control mb-4" placeholder="Last Name">
+                                <input type="email" class="form-control mb-4" placeholder="Email">
+                                <input type="tel" class="form-control mb-4" placeholder="Phone Number">
+                                <textarea class="form-control mb-4"
+                                    placeholder="Write your notes or questions here..."></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </header>
+
+    <!-- Home Page -->
+    <section class="home py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <span class="d-block mb-5 text-white-50">WELCOME TO MY WORLD</span>
+                    <h1 class="mb-5 display-6 fw-medium lh-5 text-white">hi, im <span class="text-content">Raiyan
+                            Matadar</span> <br /> a Full stack web developer.</h1>
+                    <p class="mb-5 fs-6 text-white-50">"Specialized in creating scalable websites and full-stack
+                        solutions."</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="home-img d-flex justify-content-center align-items-center overflow-hidden me-5 w-100"
+                        style="height: 400px;">
+                        <img src="images/me.png" class="img-fluid " alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-none d-md-block">
+                    <div class="home-img d-flex justify-content-center align-items-center overflow-hidden me-5 w-100"
+                        style="height: 400px;">
+                        <img src="images/me.png" class="img-fluid " alt="">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="about-items">
+                        <h5 class="fs-2 fw-medium text-white my-4">Who i am?</h5>
+                        <p class="fs-5 text-white my-4">"I am a Full Stack Developer from India, with a strong focus on
+                            building fully functional and
+                            user-friendly websites. I love engaging with technology and always push myself to learn new
+                            tools and frameworks. <br /><br />My goal is to craft digital solutions that not only work
+                            smoothly but
+                            also create meaningful experiences for people."</p>
+                        <div class="about-btn rounded-1 mt-3 p-0 shadow-none">
+                            <a href="javascript:void(0)"
+                                class="btn ms-auto rounded-1 border-0 bg-danger bg-gradient text-white fw-medium p-2">DOWNLOAD
+                                NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech stack -->
+
+    <section class="techStack py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="tech-img m-1">
+                        <img src="images/html.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="tech-img m-1">
+                        <img src="images/css.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="tech-img m-1">
+                        <img src="images/bootstrap.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!-- Coming Soon...  -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="tech-img m-1 d-flex justify-content-center align-items-center">
+                        <p class="h5 text-center text-white">Coming Soon...</p>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="tech-img m-1 d-flex justify-content-center align-items-center">
+                        <p class="h5 text-center text-white">Coming Soon...</p>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="tech-img m-1 d-flex justify-content-center align-items-center">
+                        <p class="h5 text-center text-white">Coming Soon...</p>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="tech-img m-1 d-flex justify-content-center align-items-center">
+                        <p class="h5 text-center text-white">Coming Soon...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Bootstrap Js -->
     <script src="JS/bootstrap.min.js"></script>

@@ -14,38 +14,138 @@ li {
 }
 
 body {
-    background: linear-gradient(70deg, #000000, #2c2b2c );
-    background-repeat: no-repeat;
-    height: 100vh;
-    
+    background-color: #000000;
 }
 
 /* Main CSS Start Here */
 
 /* Header */
 
-.logo a{
-    color: #fc0254 ;
+.logo a {
+    color: #fc0254;
 }
 
-.header-btn .bg-danger {
-    background-color: #fc0254 !important;
+/* form (HIRE ME)   */
+header form .modal-header {
+    background: linear-gradient(70deg, #8f0432, #1a0109) !important;
+    color: white;
 }
 
-
-.header-btn .bg-gradient {
-    background: linear-gradient(70deg, #8f0432, #fc0254) !important
+header form .modal-body {
+    color: white;
+    background-color: rgb(32 32 32);
 }
 
-.header-btn:hover .bg-gradient {
-    background: linear-gradient(360deg, #8f0432, #fc0254) !important
+header form .modal-footer {
+    color: white;
+    background-color: rgb(32 32 32);
 }
+
+/* header btn with hover 
+gradient affect */
 
 .header-btn {
     box-shadow: #fc025466 6px 7px 14px 2px !important;
+    background: linear-gradient(70deg, #8f0432, #fc0254) !important
+}
+
+.header-btn .text-content:hover {
+    background: linear-gradient(90deg, #ff00cc, #3f0a29, #970f0f, #680440);
+    background-size: 300% 100%;
+    animation: gradient 6s linear infinite;
+    font-weight: 700;
 }
 
 nav ul li:hover a{
     transition: all 200ms ease-in-out;
     color: #fc0254 !important;   
+}
+
+/* home page section */
+.home-img {
+    border-radius: 20px;
+    background: linear-gradient(70deg, #000000, #2c2b2c);
+    border: 5px solid rgb(58, 58, 58);
+}
+
+
+/* Gradient for text (raiyan matadar) header sec */
+.text-content {
+    background: linear-gradient(90deg, #ff00cc, #3f0a29, #970f0f, #680440);
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 6s linear infinite;
+    font-weight: 700;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* About me */
+
+.about-btn .bg-danger {
+    background-color: #fc0254 !important;
+}
+
+.about-btn .bg-gradient {
+    background: linear-gradient(70deg, #8f0432, #fc0254) !important
+}
+
+.about-btn:hover .bg-gradient {
+    background: linear-gradient(360deg, #8f0432, #fc0254) !important
+}
+
+
+/* Tech stack */
+.techStack {
+    background: linear-gradient(135deg, #000000, #505050, #000000);
+}
+
+.tech-img {
+    border-radius: 20px;
+    background: linear-gradient(70deg, #000000, #2c2b2c);
+    border: 5px solid rgb(58, 58, 58);
+    overflow: hidden;
+    padding: 1rem;
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    transition: all 200ms ease-out;
+}
+
+.techStack .container{
+
+    overflow: hidden;
+    /* hide scroll bar */
+    white-space: nowrap;
+    width: 100%;
+
+}
+
+.techStack .row {
+    animation: bannermove 10s linear infinite;
+    
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
