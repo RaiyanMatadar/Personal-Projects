@@ -56,9 +56,9 @@ gradient affect */
     font-weight: 700;
 }
 
-nav ul li:hover a{
+nav ul li:hover a {
     transition: all 200ms ease-in-out;
-    color: #fc0254 !important;   
+    color: #fc0254 !important;
 }
 
 /* home page section */
@@ -109,43 +109,26 @@ nav ul li:hover a{
 }
 
 
-/* Tech stack */
-.techStack {
+/* Skills*/
+.skills {
     background: linear-gradient(135deg, #000000, #505050, #000000);
 }
 
-.tech-img {
+.skills-items {
     border-radius: 20px;
     background: linear-gradient(70deg, #000000, #2c2b2c);
-    border: 5px solid rgb(58, 58, 58);
+    border: 4px solid rgb(58, 58, 58);
     overflow: hidden;
     padding: 1rem;
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    transition: all 200ms ease-out;
-}
-
-.techStack .container{
-
-    overflow: hidden;
-    /* hide scroll bar */
-    white-space: nowrap;
+    margin: 10px 0;
     width: 100%;
-
+    height: 190px;
+    object-fit: contain;
 }
 
-.techStack .row {
-    animation: bannermove 10s linear infinite;
-    
-}
-
-@keyframes bannermove {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    100% {
-        transform: translate(-50%, 0);
-    }
+@media (max-width:575px) {
+  .row-cols-xs-2 > * {
+    flex: 0 0 auto;
+    width: 50%;  
+  }
 }
