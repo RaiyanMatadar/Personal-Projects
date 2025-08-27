@@ -26,19 +26,49 @@ body {
 }
 
 /* form (HIRE ME)   */
-header form .modal-header {
-    background: linear-gradient(70deg, #8f0432, #1a0109) !important;
-    color: white;
+.header-form .modal-header {
+    color: black;
+    background: linear-gradient(70deg, #8f0432, #fc0254) !important
 }
 
-header form .modal-body {
+.header-form .modal-body {
     color: white;
     background-color: rgb(32 32 32);
 }
 
-header form .modal-footer {
+.header-form .modal-body input {
+    background-color: #000000;
+}
+
+
+.header-form .modal-body input::placeholder {
+    color: grey;
+}
+
+.header-form .modal-body textarea,
+.header-form .modal-body textarea::placeholder {
+    background-color: #000000;
+    color: grey;
+}
+
+.header-form .modal-footer {
     color: white;
     background-color: rgb(32 32 32);
+}
+
+.header-form .modal-footer button {
+    background: linear-gradient(70deg, #8f0432, #fc0254) !important
+}
+
+/* offcanvas */
+.header-offcanvas {
+    background-color: rgb(32 32 32);
+    max-width: 70%;
+}
+
+.header-offcanvas li:hover a {
+    transition: all 200ms ease-in-out;
+    color: #fc0254 !important;
 }
 
 /* header btn with hover 
@@ -159,7 +189,7 @@ nav ul li:hover a {
     transition: all 200ms ease-in-out;
 }
 
-.portfolio .card img:hover {
+.portfolio .card:hover img {
     transform: scale(1.1);
 }
 

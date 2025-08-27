@@ -15,10 +15,10 @@
 
 <body>
     <!-- Header -->
-    <header class="navbar navbar-expand-md bg-black">
+    <header class="navbar navbar-expand-md bg-black sticky-top">
         <div class="container">
             <div class="logo navbar-brand">
-                <a href="javascript:void(0)" class="fw-bold me-auto">RAIYAN</a>
+                <a href="#" class="fw-bold me-auto">RAIYAN</a>
             </div>
 
             <div class="header-btn rounded-1 ms-auto me-3 order-md-last">
@@ -26,12 +26,12 @@
                     data-bs-target="#contact-modal" data-bs-toggle="modal">HIRE ME</a>
             </div>
 
-            <a href="javascript:void(0)" class="navbar-toggler border-0" data-bs-toggle="collapse"
-                data-bs-target="#menu">
+            <a href="javascript:void(0)" class="navbar-toggler border-0" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas">
                 <i class="ri-menu-3-line text-white fs-4"></i>
             </a>
 
-            <nav class="navbar-collapse collapse" id="menu">
+            <nav class="navbar-collapse collapse py-3">
                 <ul class="nav mx-auto flex-column flex-md-row">
                     <li><a href="#home" class="fw-medium mx-3 text-white">Home</a></li>
                     <li><a href="#about" class="fw-medium mx-3 text-white">About</a></li>
@@ -40,36 +40,53 @@
                     <li><a href="#contact" class="fw-medium mx-3 text-white">Contact</a></li>
                 </ul>
             </nav>
-
-            <!-- Form section using modal -->
-            <form>
-                <div class="modal fade" id="contact-modal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3>CONTACT US</h3>
-                                <a href="javascript:void(0)" class="btn-close bg-white" data-bs-dismiss="modal"></a>
-                            </div>
-                            <div class="modal-body">
-                                <input type="text" class="form-control mb-4" placeholder="First Name">
-                                <input type="text" class="form-control mb-4" placeholder="Last Name">
-                                <input type="email" class="form-control mb-4" placeholder="Email">
-                                <input type="tel" class="form-control mb-4" placeholder="Phone Number">
-                                <textarea class="form-control mb-4"
-                                    placeholder="Write your notes or questions here..."></textarea>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" type="submit">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
         </div>
     </header>
 
+    <!-- header Form section using modal -->
+    <form class="header-form">
+        <div class="modal fade" id="contact-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-white text">
+                        <h3>CONTACT US</h3>
+                        <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal"></a>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control mb-4" placeholder="First Name">
+                        <input type="text" class="form-control mb-4" placeholder="Last Name">
+                        <input type="email" class="form-control mb-4" placeholder="Email">
+                        <input type="tel" class="form-control mb-4" placeholder="Phone Number">
+                        <textarea class="form-control mb-4"
+                            placeholder="Write your notes or questions here..."></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- header Offcanvas -->
+    <div class="header-offcanvas offcanvas offcanvas-end collapse" id="offcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white">Menu</h5>
+            <i class="ri-close-line ms-auto text-white fs-2" data-bs-dismiss="offcanvas"></i>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav mx-auto flex-column">
+                <li><a href="#home" class="fw-medium mx-3 mb-2 text-white fs-5">Home</a></li>
+                <li><a href="#about" class="fw-medium mx-3 mb-2 text-white fs-5">About</a></li>
+                <li><a href="#skills" class="fw-medium mx-3 mb-2 text-white fs-5">Skills</a></li>
+                <li><a href="#portfolio" class="fw-medium mx-3 mb-2 text-white fs-5">Portfolio</a></li>
+                <li><a href="#contact" class="fw-medium mx-3 mb-2 text-white fs-5">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Home Page -->
-    <section class="home py-5" id="home">
+    <section class="home py-5 mt-5" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
