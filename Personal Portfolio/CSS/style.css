@@ -21,13 +21,8 @@ body {
 
 /* Header */
 
-.logo a {
-    color: #fc0254;
-}
-
 /* form (HIRE ME)   */
 .header-form .modal-header {
-    color: black;
     background: linear-gradient(70deg, #8f0432, #fc0254) !important
 }
 
@@ -37,6 +32,7 @@ body {
 }
 
 .header-form .modal-body input {
+    color: white;
     background-color: #000000;
 }
 
@@ -60,7 +56,7 @@ body {
     background: linear-gradient(70deg, #8f0432, #fc0254) !important
 }
 
-/* offcanvas */
+/* header Offcanvas  */
 .header-offcanvas {
     background-color: rgb(32 32 32);
     max-width: 70%;

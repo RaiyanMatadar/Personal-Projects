@@ -1,0 +1,4 @@
+contact
+
+I need to add the function for ther phone number as there should be all the country codes and
+when i select any country code then it should change the place holver so keep in mind  
