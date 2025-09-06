@@ -21,6 +21,12 @@ body {
 
 /* Header */
 
+/* for giving blur affect to header */
+header {
+    background-color: rgba(0, 0, 0, 0.644);
+    backdrop-filter: blur(50px);
+}
+
 /* form (HIRE ME)   */
 .header-form .modal-header {
     background: linear-gradient(70deg, #8f0432, #fc0254) !important
@@ -56,6 +62,7 @@ body {
     background: linear-gradient(70deg, #8f0432, #fc0254) !important
 }
 
+
 /* header Offcanvas  */
 .header-offcanvas {
     background-color: rgb(32 32 32);
@@ -88,12 +95,38 @@ nav ul li:hover a {
 }
 
 /* home page section */
+
 .home-img {
     border-radius: 20px;
     background: linear-gradient(70deg, #000000, #2c2b2c);
     border: 5px solid rgb(58, 58, 58);
 }
 
+/* For rotating dots animation */
+.dots-animation::before {
+    content: '';
+    position: absolute;
+    background: url(../images/Pink_glow.png);
+    width: 100%;
+    height: 380px;
+    top: 0;
+    right: 0;
+    left: -50px;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 50%;
+    animation: rotate 20s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* Gradient for text (raiyan matadar) header sec */
 .text-content {
@@ -136,6 +169,12 @@ nav ul li:hover a {
 
 
 /* Skills*/
+
+
+.skills {
+    background: linear-gradient(135deg, #000000, #505050, #000000);
+}
+
 .skills-title .text-content {
     background: linear-gradient(90deg, #ff00cc, #3f0a29, #970f0f, #680440);
     background-size: 300% 100%;
@@ -144,11 +183,6 @@ nav ul li:hover a {
     color: transparent;
     animation: gradient 6s linear infinite;
     font-weight: 700;
-}
-
-
-.skills {
-    background: linear-gradient(135deg, #000000, #505050, #000000);
 }
 
 .skills-items {
@@ -207,4 +241,22 @@ nav ul li:hover a {
 
 .portfolio .card-body {
     height: 16rem;
+}
+
+/* Contact */
+
+.contact-us form input,
+.contact-us form textarea {
+    background-color: #2c2b2ca6;
+}
+
+.contact-us form input:focus,
+.contact-us form textarea:focus {
+    background-color: #2c2b2ca6;
+}
+
+
+.contact-us form input::placeholder,
+.contact-us form textarea::placeholder {
+    color: #cccccca6;
 }
