@@ -14,7 +14,7 @@ li {
 }
 
 body {
-    background: radial-gradient(rgb(48, 48, 48),black);
+    background: radial-gradient(rgb(48, 48, 48), black);
 }
 
 
@@ -98,10 +98,12 @@ nav ul li:hover a {
 
 /* home page section */
 
-.home-img {
+.home-img img{
     border-radius: 20px;
     background: linear-gradient(70deg, #000000, #2c2b2c);
     border: 5px solid rgb(58, 58, 58);
+    height: 25rem;
+    object-fit: cover;
 }
 
 /* For rotating dots animation */
