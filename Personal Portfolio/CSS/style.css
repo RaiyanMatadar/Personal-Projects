@@ -14,8 +14,9 @@ li {
 }
 
 body {
-    background-color: #000000;
+    background: radial-gradient(rgb(48, 48, 48),black);
 }
+
 
 /* Main CSS Start Here */
 
@@ -23,7 +24,8 @@ body {
 
 /* for giving blur affect to header */
 header {
-    background-color: rgba(0, 0, 0, 0.644);
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 100px;
     backdrop-filter: blur(50px);
 }
 
