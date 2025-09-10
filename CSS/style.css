@@ -100,7 +100,8 @@ nav ul li:hover a {
 
 .home-img img{
     border-radius: 20px;
-    background: linear-gradient(70deg, #000000, #2c2b2c);
+    background: linear-gradient(70deg, #000000a7, #2c2b2c9e);
+    backdrop-filter: blur(50px);
     border: 5px solid rgb(58, 58, 58);
     height: 25rem;
     object-fit: cover;
